@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nathans Mowing | Hornsby Shire Lawn Mowing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nathans Mowing provides reliable lawn mowing and garden services across Hornsby Shire Council. Call or message for a free quote.">
+  <meta name="keywords" content="lawn mowing Hornsby, garden services Hornsby Shire, Nathans Mowing">
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #eef7ec; color: #16321f; line-height: 1.6; }
+
+    /* STICKY NAVIGATION */
+    nav { position: sticky; top: 0; background:#114B26; z-index:1000; display:flex; justify-content:center; padding:10px 0; }
+    nav a { color:#fff; text-decoration:none; margin:0 15px; font-weight:bold; }
+    nav a:hover { color:#d8f5d8; }
+
+    header { background: url('placeholder-hero.jpg') no-repeat center center/cover; color: #fff; text-align: center; padding: 80px 20px; position: relative; }
+    header::after { content: ""; position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(17,75,38,0.65); z-index:0; }
+    header img, header h1, header p { position: relative; z-index:1; }
+    header img { max-width:150px; margin-bottom:15px; }
+    header h1 { margin:0; font-size:2.5rem; }
+    header p { font-size:1.2rem; margin-top:5px; }
+
+    section { max-width: 1100px; margin:auto; padding: 40px 20px; }
+    h2 { color:#114B26; margin-bottom:15px; }
+    .services ul, .pricing ul { list-style:none; padding:0; }
+    .services li, .pricing li { background:#fff; padding:15px; margin-bottom:10px; border-left:6px solid #1B5E20; }
+    .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:15px; }
+    .gallery img { width:100%; height:auto; border-radius:6px; }
+    .reviews { background:#fff; padding:25px; border-radius:6px; }
+    .review { margin-bottom:15px; }
+    .contact-box { background:#fff; padding:25px; border-radius:6px; }
+    input, textarea, select { width:100%; padding:12px; margin-bottom:10px; border:1px solid #ccc; border-radius:4px; font-size:1rem; }
+    button { background:#114B26; color:#fff; border:none; padding:12px 20px; font-size:1rem; cursor:pointer; border-radius:4px; }
+    button:hover { background:#0f3f1d; }
+    .cta { background:#114B26; color:#fff; text-align:center; padding:40px 20px; }
+    .cta a { display:inline-block; margin:10px; padding:12px 25px; background:#fff; color:#2e7d32; text-decoration:none; font-weight:bold; border-radius:4px; }
+    iframe { width:100%; height:350px; border:0; border-radius:6px; }
+
+    .modal { display:none; position:fixed; z-index:10; left:0; top:0; width:100%; height:100%; overflow:auto; background: rgba(0,0,0,0.7); }
+    .modal-content { background:#fff; margin:10% auto; padding:30px; border-radius:6px; width:90%; max-width:500px; position:relative; }
+    .close { position:absolute; top:10px; right:15px; font-size:1.5rem; font-weight:bold; color:#333; cursor:pointer; }
+
+    #scrollTopBtn { display:none; position:fixed; bottom:40px; right:30px; z-index:99; font-size:18px; border:none; outline:none; background-color:#2e7d32; color:white; cursor:pointer; padding:15px; border-radius:50%; }
+    #scrollTopBtn:hover { background-color:#256628; }
+
+    .social-icons { text-align:center; margin-top:20px; }
+    .social-icons a { margin:0 10px; color:#114B26; font-size:1.5rem; text-decoration:none; }
+    .social-icons a:hover { color:#0f3f1d; }
+
+    .insta-feed { display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:10px; margin-top:20px; }
+    .insta-feed img { width:100%; border-radius:6px; }
+
+    footer { background:#0b2415; color:#cfe7d2; text-align:center; padding:20px; font-size:0.9rem; }
+
+    #whatsappBtn { position: fixed; bottom: 100px; right: 20px; z-index: 100; background:#25D366; color:#fff; border:none; padding:15px; border-radius:50%; font-size:24px; cursor:pointer; box-shadow: 2px 2px 5px rgba(0,0,0,0.3); }
+    #whatsappBtn:hover { background:#1ebe5d; }
+  </style>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- STICKY NAVIGATION -->
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header>
+  <img src="placeholder-logo.png" alt="Nathans Mowing Logo">
+  <h1>Nathans Mowing</h1>
+  <p>Reliable Lawn Mowing & Garden Care – Hornsby Shire Council</p>
+</header>
+
+<section id="about">
+  <h2>About Nathans Mowing</h2>
+  <p>Nathans Mowing is a local lawn mowing and garden maintenance business servicing <strong>Hornsby Shire Council</strong>. We provide reliable, affordable, and high-quality lawn care for residential properties.</p>
+</section>
+
+<section id="services" class="services">
+  <h2>Our Services</h2>
+  <ul>
+    <li>Lawn mowing</li>
+    <li>Edge trimming</li>
+    <li>Garden clean-ups</li>
+    <li>Green waste removal</li>
+    <li>One-off and regular maintenance</li>
+  </ul>
+</section>
+
+<section id="pricing" class="pricing">
+  <h2>Pricing</h2>
+  <ul>
+    <li>Lawn Mowing (small yard): $35</li>
+    <li>Lawn Mowing (medium yard): $50</li>
+    <li>Lawn Mowing (large yard): $70</li>
+    <li>Edge Trimming: $20</li>
+    <li>Garden Clean-up (per hour): $40</li>
+    <li>Green Waste Removal: $30</li>
+    <li>One-off Service: From $50</li>
+    <li>Regular Maintenance (weekly): $45 per visit</li>
+  </ul>
+</section>
+
+<section id="gallery">
+  <h2>Our Work</h2>
+  <div class="gallery">
+    <img src="placeholder1.jpg" alt="Gallery Image 1">
+    <img src="placeholder2.jpg" alt="Gallery Image 2">
+    <img src="placeholder3.jpg" alt="Gallery Image 3">
+    <img src="placeholder4.jpg" alt="Gallery Image 4">
+  </div>
+</section>
+
+<section id="reviews">
+  <h2>Customer Reviews</h2>
+  <div class="reviews">
+    <div class="review">⭐️⭐️⭐️⭐️⭐️ Great service, very reliable.</div>
+    <div class="review">⭐️⭐️⭐️⭐️⭐️ Lawn looked amazing after the cut.</div>
+    <div class="review">⭐️⭐️⭐️⭐️⭐️ Affordable and friendly local service.</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact & Quotes</h2>
+  <div class="contact-box">
+    <p>📞 <strong>0413 458 006</strong><br>📞 <strong>0405 407 707</strong><br>📧 <a href="mailto:nateywazza@gmail.com">nateywazza@gmail.com</a></p>
+    <button onclick="openModal()">Book Now</button>
+  </div>
+</section>
+
+<section>
+  <h2>Service Area</h2>
+  <p>📍 Hornsby Shire Council<br>Hornsby, Asquith, Normanhurst, Waitara, Mount Colah, Mount Kuring-gai, Thornleigh, Wahroonga, and surrounding suburbs.</p>
+</section>
+
+<section>
+  <h2>Follow Us on Instagram</h2>
+  <div class="insta-feed">
+    <img src="placeholder-insta1.jpg" alt="Instagram Photo 1">
+    <img src="placeholder-insta2.jpg" alt="Instagram Photo 2">
+    <img src="placeholder-insta3.jpg" alt="Instagram Photo 3">
+    <img src="placeholder-insta4.jpg" alt="Instagram Photo 4">
+  </div>
+</section>
+
+<div class="social-icons">
+  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://wa.me/0413458006" target="_blank"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+<button onclick="scrollTop()" id="scrollTopBtn" title="Go to top">↑</button>
+<a href="https://wa.me/0413458006" target="_blank" id="whatsappBtn"><i class="fab fa-whatsapp"></i></a>
+
+<footer>
+  © 2026 Nathans Mowing | nathansmowing.com.au
+</footer>
+
+<div id="bookingModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Book a Service</h2>
+    <form action="mailto:nateywazza@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Your Phone Number" required>
+      <select name="service" required>
+        <option value="" disabled selected>Select Service</option>
+        <option>Lawn Mowing (small yard)</option>
+        <option>Lawn Mowing (medium yard)</option>
+        <option>Lawn Mowing (large yard)</option>
+        <option>Edge Trimming</option>
+        <option>Garden Clean-up</option>
+        <option>Green Waste Removal</option>
+      </select>
+      <input type="date" name="date" required>
+      <input type="time" name="time" required>
+      <textarea name="message" placeholder="Additional Details" rows="4"></textarea>
+      <button type="submit">Submit Booking</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById("bookingModal");
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  function openModal() { modal.style.display = "block"; }
+  function closeModal() { modal.style.display = "none"; }
+  window.onclick = function(event) { if (event.target == modal) { modal.style.display = "none"; } }
+
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) { scrollBtn.style.display = "block"; }
+    else { scrollBtn.style.display = "none"; }
+  }
+  function scrollTop() { document.body.scrollTop = 0; document.documentElement.scrollTop = 0; }
+</script>
+
+</body>
+</html>
